@@ -1,89 +1,90 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Report Bot',
-  tagline: 'Бот для отчетов',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'docs', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  title: "Report Bot",
+  tagline: "Бот для отчетов",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "Report Bot", // Usually your GitHub org/user name.
+  projectName: "Report Bot Docs", // Usually your repo name.
   i18n: {
-    defaultLocale: 'en',
-    locales: ['ru', 'en'],
+    defaultLocale: "en",
+    locales: ["ru", "en"],
   },
   themeConfig: {
     navbar: {
-      title: 'Report Bot',
+      title: "Report Bot",
       logo: {
-        alt: 'Report Bot Logo',
-        src: 'img/logo.svg',
+        alt: "Report Bot Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "Документация",
         },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
         {
-          href: 'https://github.com/plutalov/report-bot',
-          label: 'GitHub',
-          position: 'right',
+          label: "Презентация",
+          to: "/presentation/intro",
+          position: "left",
+        },
+        {
+          href: "https://github.com/plutalov/report-bot",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Telegram",
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
+              label: "@hackathon_report_bot",
+              href: "https://t.me/hackathon_report_bot",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "GitHub",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.com/',
+              label: "Проект",
+              href: "https://github.com/plutalov/report-bot",
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/plutalov/report-bot',
+              label: "Документация",
+              href: "https://github.com/I-Atlas/report-bot-docs",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Report Bot Documentation, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Report Bot Docs, Inc.`,
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/I-Atlas/report-bot-docs',
+          editUrl: "https://github.com/I-Atlas/report-bot-docs",
+        },
+        presentation: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl: "https://github.com/I-Atlas/report-bot-docs",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

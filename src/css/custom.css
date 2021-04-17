@@ -6,6 +6,7 @@
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
   --ifm-color-primary: #38c4ee;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -15,6 +16,27 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+}
+
+.hero {
+  background-image: url('../../static/img/background/bg-main.png');
+  background-size: cover;
+}
+
+.padding-horiz--md {
+  padding-top: 0.9rem !important;
+}
+
+.footer__title {
+  text-align: center;
+}
+
+.footer__item {
+  text-align: center;
+}
+
+.footer__copyright {
+  margin-top: 1.5rem;
 }
 
 .docusaurus-highlight-code-line {
