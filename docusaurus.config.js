@@ -28,11 +28,6 @@ module.exports = {
           label: "Документация",
         },
         {
-          label: "Презентация",
-          to: "/presentation/intro",
-          position: "left",
-        },
-        {
           href: "https://github.com/plutalov/report-bot",
           label: "GitHub",
           position: "right",
@@ -74,12 +69,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/I-Atlas/report-bot-docs",
-        },
-        presentation: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          showReadingTime: true,
           // Please change this to your repo.
           editUrl: "https://github.com/I-Atlas/report-bot-docs",
         },
