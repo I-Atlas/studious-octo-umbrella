@@ -13,3 +13,5 @@ During the hackathon, I made a core functionality for issuing reports, a website
 Case description here: `/details/case.pdf`
 
 Main telegram bot repo: https://github.com/plutalov/report-bot
+
+![hackathon](/details/image.jpg)
