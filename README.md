@@ -3,7 +3,7 @@
 > [!NOTE]  
 > Case description here: `/details/case.pdf`
 
-## 🏅 The Ødy team took first place
+## 🏅 The Ødy team took first (1) place
 
 ![hackathon](/details/cert.jpg)
 
